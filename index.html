@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/503054cb29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+</head>
+
+<body>
+    <header>
+        <div class="flex-header">
+            <div class="titulo-menu">
+                <i class="fa-solid fa-ticket"></i>
+                <h1 class="titulo-header">INGRESSOU</h1>
+                <ul class="menu-header">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Eventos</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="busca-profile">
+                <input type="text" class="barra-pesquisa" placeholder="Buscar eventos">
+                <button class="pesquisar"><i class="fa-solid fa-magnifying-glass lupa"></i></button>
+
+                <a href="#" class="profile"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!--------------CARROSSEL------------------>
+
+    <div class="my-slider">
+        <div class="slide s1">slide1</div>
+        <div class="slide s2">slide2</div>
+        <div class="slide s3">slide3</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 1, // Quantidade de itens que são exibidos ao mesmo tempo
+            slideBy: 'page',
+            autoplay: true,
+            mouseDrag: true, // Seta se o carousel pode ser rotacionado com o movimento de clicar e arrastar do mouse
+            autoplayButtonOutput: false, // Seta visibilidade do botão de auto play
+            controls: true, // seta visibilidade das setas de controle
+            nav: false // Seta visibilidade da navegação (3 pontinhos)
+        });
+    </script>
+
+
+    <!---------------CATEGORIAS---------------------->
+
+    <main>
+        <Section class="categorias">
+            <h2 class="titulo-seccao">CATEGORIAS</h2>
+            <div class="flex-categorias">
+                <div class="categoria">
+                    <i class="fa-solid fa-music categoria-icon musica-icon"></i>
+                    <h3 class="titulo-categoria">Musica</h3>
+                </div>
+
+                <div class="categoria">
+                    <i class="fa-solid fa-basketball categoria-icon basket-icon"></i>
+                    <h3 class="titulo-categoria">Esportes</h3>
+                </div>
+
+                <div class="categoria">
+                    <i class="fa-solid fa-masks-theater categoria-icon"></i>
+                    <h3 class="titulo-categoria">Teatro</h3>
+                </div>
+
+                <div class="categoria">
+                    <i class="fa-solid fa-face-laugh-beam categoria-icon"></i>
+                    <h3 class="titulo-categoria">Comedia</h3>
+                </div>
+
+                <div class="categoria">
+                    <i class="fa-solid fa-umbrella-beach categoria-icon"></i>
+                    <h3 class="titulo-categoria">Festivais</h3>
+                </div>
+            </div>
+        </Section>
+
+        <!------------------EVENTOS PRINCIPAIS------------------------------>
+
+        <section class="eventos-principais">
+            <h2 class="titulo-seccao-2">Eventos Principais</h2>
+            <div class="flex-eventos-principais">
+                <a href="#">
+                    <div class="evento">
+                        <div class="img-evento"></div>
+                        <div class="categoria-data-flex">
+                            <p class="evento-categoria evento-categoria-musica">Musica</p>
+                            <p class="data">12/12/2025</p>
+                        </div>
+                        <h3 class="titulo-evento">Festival de Musica</h3>
+                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                        </p>
+                        <div class="preco-detalhes-flex">
+                            <span class="preco">R$ 89.99</span>
+                            <button class="ver-mais">Ver Mais</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="evento">
+                        <div class="img-evento"></div>
+                        <div class="categoria-data-flex">
+                            <p class="evento-categoria evento-categoria-esporte">Esportes</p>
+                            <p class="data">12/12/2025</p>
+                        </div>
+                        <h3 class="titulo-evento">Festival de Musica</h3>
+                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                        </p>
+                        <div class="preco-detalhes-flex">
+                            <span class="preco">R$ 89.99</span>
+                            <button class="ver-mais">Ver Mais</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="evento">
+                        <div class="img-evento"></div>
+                        <div class="categoria-data-flex">
+                            <p class="evento-categoria evento-categoria-teatro">Teatro</p>
+                            <p class="data">12/12/2025</p>
+                        </div>
+                        <h3 class="titulo-evento">Festival de Musica</h3>
+                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                        </p>
+                        <div class="preco-detalhes-flex">
+                            <span class="preco">R$ 89.99</span>
+                            <button class="ver-mais">Ver Mais</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!--DESTAQUES-->
+
+        <section class="destaques">
+            <h2 class="titulo-seccao-2">Destaques da Semana</h2>
+            <div class="flex-destaques">
+                <div class="destaque">
+                    <a href="#">
+                        <div class="img-evento-destaque"></div>
+
+                        <div class="informacoes-destaque">
+                            <div class="categoria-data-flex">
+                                <p class="evento-categoria evento-categoria-teatro">Teatro</p>
+                                <p class="data">12/12/2025</p>
+                            </div>
+                            <h3 class="titulo-evento-destaque">Festival de Musica</h3>
+                            <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo
+                                todo.
+                            </p>
+
+                            <div class="preco-detalhes-flex">
+                                <span class="preco">R$ 89.99</span>
+                                <button class="ver-mais">Ver Mais</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="destaque">
+                    <a href="#">
+                        <div class="img-evento-destaque"></div>
+
+                        <div class="informacoes-destaque">
+                            <div class="categoria-data-flex">
+                                <p class="evento-categoria evento-categoria-teatro">Teatro</p>
+                                <p class="data">12/12/2025</p>
+                            </div>
+                            <h3 class="titulo-evento-destaque">Festival de Musica</h3>
+                            <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo
+                                todo.
+                            </p>
+
+                            <div class="preco-detalhes-flex">
+                                <span class="preco">R$ 89.99</span>
+                                <button class="ver-mais">Ver Mais</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="destaque">
+                    <a href="#">
+                        <div class="img-evento-destaque"></div>
+
+                        <div class="informacoes-destaque">
+                            <div class="categoria-data-flex">
+                                <p class="evento-categoria evento-categoria-teatro">Teatro</p>
+                                <p class="data">12/12/2025</p>
+                            </div>
+                            <h3 class="titulo-evento-destaque">Festival de Musica</h3>
+                            <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo
+                                todo.
+                            </p>
+
+                            <div class="preco-detalhes-flex">
+                                <span class="preco">R$ 89.99</span>
+                                <button class="ver-mais">Ver Mais</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="destaque">
+                    <a href="#">
+                        <div class="img-evento-destaque"></div>
+
+                        <div class="informacoes-destaque">
+                            <div class="categoria-data-flex">
+                                <p class="evento-categoria evento-categoria-teatro">Teatro</p>
+                                <p class="data">12/12/2025</p>
+                            </div>
+                            <h3 class="titulo-evento-destaque">Festival de Musica</h3>
+                            <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo
+                                todo.
+                            </p>
+
+                            <div class="preco-detalhes-flex">
+                                <span class="preco">R$ 89.99</span>
+                                <button class="ver-mais">Ver Mais</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--EVENTOS PROXIMOS DE VOCÊ-->
+
+        <section class="eventos-proximos">
+            <h2 class="titulo-seccao-2">Eventos Proximos de Você</h2>
+
+            <div class="flex-eventos-proximos">
+                <div class="escolher-local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <label for="opcoes"></label>
+                    <select id="opcoes" class="locais">
+                        <option value="1" class="local">Rio de Janeiro</option>
+                        <option value="2" class="local">São Paulo</option>
+                        <option value="3" class="local">Minas Gerais</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+            <div class="flex-evento-local">
+                <div class="evento-local">
+                    <div class="img-evento-local"></div>
+                    <div class="detalhes-evento-local">
+                        <div class="categoria-data-flex">
+                            <p class="evento-categoria evento-categoria-teatro">Teatro</p>
+                            <p class="data">12/12/2025</p>
+                        </div>
+                        <h3 class="titulo-evento-local">Show de Comedia</h3>
+                        <p class="local">Copacabana, RJ</p>
+                        <div class="flex-preco-detalhes-local">
+                            <p class="preco-evento-local">R$ 89.99</p>
+                            <button class="ver-mais-evento-local">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evento-local">
+                    <div class="img-evento-local"></div>
+                    <div class="detalhes-evento-local">
+                        <div class="categoria-data-flex">
+                            <p class="evento-categoria-local evento-categoria-comedia">Comedia</p>
+                            <p class="data">12/12/2025</p>
+                        </div>
+                        <h3 class="titulo-evento-local">Show de Comedia</h3>
+                        <p class="local">Copacabana, RJ</p>
+                        <div class="flex-preco-detalhes-local">
+                            <p class="preco-evento-local">R$ 89.99</p>
+                            <button class="ver-mais-evento-local">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="flex-ver-todos-local">
+                <button class="botao-ver-todos-local">Todos perto de você</button>
+            </div>
+        </section>
+    </main>
+
+    <!---------------FOOTER-------------------->
+
+    <footer>
+        <div class="flex-footer">
+            <div class="logo-descricao-social">
+                <div class="logo">
+                    <i class="fa fa-ticket icon-logo-footer"></i>
+                    <h4 class="titulo-footer">Ingressou</h4>
+                </div>
+
+                <div class="descricao">
+                    <p class="descricao-texto">
+                        Seu ingresso para experiências incríveis. Encontre e reserve ingressos para shows, esportes,
+                        teatro e mais eventos ao redor do mundo.
+                    </p>
+                </div>
+
+                <div class="social">
+                    <i class="fa fa-facebook social-icon"></i>
+                    <i class="fa fa-twitter social-icon"></i>
+                    <i class="fa fa-instagram social-icon"></i>
+                </div>
+            </div>
+
+            <div class="categorias-footer">
+                <h3 class="titulo-categorias-footer">Categorias</h3>
+                <ul class="lista-categorias">
+                    <a href="#">
+                        <li>Musica</li>
+                    </a>
+                    <a href="#">
+                        <li>Esportes</li>
+                    </a>
+                    <a href="#">
+                        <li>Teatro</li>
+                    </a>
+                    <a href="#">
+                        <li>Comedia</li>
+                    </a>
+                    <a href="#">
+                        <li>Festivais</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-conta">
+                <h3 class="titulo-conta-footer">Conta</h3>
+                <ul class="lista-conta-footer">
+                    <a href="#">
+                        <li>Perfil</li>
+                    </a>
+                    <a href="#">
+                        <li>Tickets</li>
+                    </a>
+                    <a href="#">
+                        <li>Reembolso</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="newsletter-footer">
+                <h3 class="titulo-newsletter-footer">Newsletter</h3>
+                <p class="desccricao-newsletter-footer">Se inscreva para receber email sobre eventos, ofertas e mais.
+                </p>
+
+                <input type="text" id="input-newsletter-footer" placeholder="Seu email">
+                <button class="inscreva-se-footer">Inscreva-se</button>
+            </div>
+        </div>
+
+        <hr>
+    </footer>
+</body>
+
+</html>
