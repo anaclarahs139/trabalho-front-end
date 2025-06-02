@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/503054cb29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cadastro-login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="flex-header-lr">
+            <div class="titulo-menu">
+                <i class="fa-solid fa-ticket"></i>
+                <a href="./index.html">
+                    <h1 class="titulo-header">INGRESSOU</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--Cadastro-->
+    <div class="cadastro-login">
+        <div class="form-container">
+            <h1 class="titulo-cadastro-login">Bem vindo</h1>
+            <h4 class="cadastre-text">Cadastre-se</h4>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <input type="password" placeholder="Sua senha" required>
+                <div class="tipo-usuario-container">
+                    <p class="register-p">Selecione o tipo de usuário:</p>
+                    <div class="escolha-usuario">
+                        <input type="radio" id="comum" name="tipo-usuario" required>
+                        <label for="comum">Comum</label>
+
+                        <input type="radio" id="organizador" name="tipo-usuario" required>
+                        <label for="organizador">Organizador</label>
+                    </div>
+                </div>
+                <input type="submit" value="Registrar" class="enviar">
+            </form>
+            <p class="link-p">Já tem cadastro? <a href="./login.html" class="login-link">Acesse</a></p>
+        </div>
+    </div>
+</body>
+</html>

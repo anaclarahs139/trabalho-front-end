@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/503054cb29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/perfil.css">
+    <link rel="stylesheet" href="/styles/reembolso.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex-header">
+            <div class="div-titulo-header">
+                <a href="index.html"><i class="fa-solid fa-ticket"></i></a>
+                <h1 class="titulo-header"><a href="index.html">INGRESSOU</a></h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="div-nav-perfil">
+        <p class="navegacao-perfil">Pedir Reembolso</p>
+    </div>
+
+    <main>
+        <div class="lados">
+            <!-----------------LADO ESQUERDO-------------------------->
+            <div class="lado-esquerdo">
+                <div class="img-perfil-nav">
+                    <div class="icon-usuario">
+                        <i class="fas fa-user-circle fa-10x  icon-foto-perfil"></i>
+                    </div>
+                    <p class="nome-usuario">NOME</p>
+                    <p class="email-usuario">Email@exemplo.com</p>
+                    <button class="editar-perfil">Editar Perfil</button>
+                </div><!--img-perfil-nav-->
+
+                <div class="nav-perfil">
+                    <ul class="lista-nav-perfil">
+                        <a href="perfil.html">
+                            <li class="link-nav-perfil"><i class="fa-solid fa-ticket-simple icon-nav-perfil"></i> Meus
+                                Ingressos</li>
+                        </a>
+                        <a href="reembolso.html">
+                            <li class="link-nav-perfil atual"><i
+                                    class="fa-solid fa-arrow-rotate-left icon-nav-perfil"></i>
+                                Pedidos de Reembolso</li>
+                        </a>
+                        <a href="#">
+                            <li class="link-nav-perfil"><i class="fas fa-history icon-nav-perfil"></i> Historico de
+                                Compras</li>
+                        </a>
+                        <a href="#">
+                            <li class="link-nav-perfil"><i class="fa-solid fa-gear"></i> Configurações da Conta</li>
+                        </a>
+                    </ul>
+                </div><!--nav-perfil-->
+            </div><!--lado-esquerdo-->
+
+            <!------------------LADO DIREITO------------------------->
+
+            <div class="lado-direito">
+                <div class="informativo">
+                    <h3 class="titulo-informativo"><i class="fa-solid fa-circle-info"></i> Informativo de Reembolso</h3>
+
+                    <p class="texto-informativo">O processamento do reembolso normalmente leva de 5 a 7 dias úteis após
+                        a aprovação. Os reembolsos são emitidos para o método de pagamento original utilizado na compra.
+                    </p>
+                </div><!--informativo-->
+
+                <!------------------FORMULARIO DE REEMBOLSO------------------------->
+
+                <div class="form-reembolso div-cor">
+                    <div class="header-form-reembolso header-div">
+                        <h3 class="titulo-form-reembolso titulo-divs">Pedir Reembolso</h3>
+                    </div><!--header-form-reembolso-->
+
+                    <div class="conteudo-form-reembolso">
+
+                        <label for="qual-ticket">Escolhe o Ticket que desejar pedir reembolso</label><br>
+                        <select name="ingressos" id="ingressos" required>
+                            <option value="ingressos">Escolha o evento</option>
+                        </select><br><br>
+
+                        <label for="porque">Por que deseja pedir reembolso</label><br>
+                        <select name="porque" id="porque-reembolso" required>
+                            <option value="porque">Escolha um motivo</option>
+
+                            <option value="porque" name="nao-posso-ir">Não posso ir ao evento</option>
+
+                            <option value="porque" name="detalhes-mudaram">Detalhes do evento mudaram</option>
+
+                            <option value="porque" name="emergencia-trabalho">Emergência de trabalho</option>
+
+                            <option value="porque" name="horario-mudou">Horario do evento mudou</option>
+
+                            <option value="porque">Outro</option>
+
+                        </select><br><br>
+
+                        <label for="detalhes-adicionais">Detalhes Adicionais:</label><br>
+                        <textarea name="detalhes-adicionais" id="detalhes-adicionais"
+                            placeholder="Se necessario adicione detalhes adicionais"></textarea><br><br>
+
+                        <input type="checkbox" name="termos" id="termos" required>
+                        <label for="termos">Eu entendo que o reembolso esta sujeito a politica do
+                            evento</label><br><br>
+
+                        <button class="pedir-reembolso" onclick="pegarReembolso()">Pedir Reembolso</button>
+
+                    </div><!--conteudo-form-reembolso-->
+                </div><!--form-reembolso-->
+
+                <!------------------REEMBOLSOS EM ANALISE----------------------->
+
+                <div class="reembolsos-em-analise div-cor">
+                    <div class="header-reembolsos-em-analise header-div">
+                        <h3 class="titulo-reembolsos-em-analise titulo-divs">Reembolsos em Analise</h3>
+                        <p class="quantidade-reembolsos-em-analise">1 Pedido</p>
+                    </div><!--header-reembolsos-em-analise-->
+
+                    <div class="conteudo-reembolsos-em-analise">
+                        <div class="conteudo-reembolso-em-analise">
+                            <div class="titulo-reembolso-pendente">
+                                <h3 class="nome-evento-do-reembolso">Festival da Musica</h3>
+                                <p class="reembolso-pendente">Em analise</p>
+                            </div><!--titulo-status-reembolso-->
+
+                            <div class="preco-botao-reembolso">
+                                <p class="preco-reembolso">R$ 120</p>
+                                <button class="cancelar-reembolso">cancelar Reembolso</button>
+                            </div><!--preco-botao-reembolso-->
+
+                            <div class="motivo-reembolso">
+                                <p class="motivo"><b>Motivo:</b> Emergência de trabalho</p>
+                                <p class="observacao"><b>Observação:</b> Nenhuma observação</p>
+                            </div><!--motivo-reembolso-->
+                        </div><!--conteudo-rembolso-em-analise-->
+
+                        
+                    </div>
+                </div><!--reembolsos-em-analise-->
+
+                <!-------------------HISTORICO DE REEMBOLSOS------------------------------->
+
+                <div class="historico-reembolsos div-cor">
+                    <div class="header-historico-reembolsos header-div">
+                        <h3 class="titulo-historico-reembolsos titulo-divs">Historico de Reembolsos</h3>
+                        <p class="quantidade-reembolsos">2 Pedidos</p>
+                    </div><!--header-historico-reembolsos-->
+
+                    <div class="conteudo-historico-reembolsos">
+                        <div class="reembolso-status">
+                            <h3 class="titulo-evento">Noite de Jazz</h3>
+                            <p class="preco-reembolso">R$ 55</p>
+                            <p class="Aprovado">Aprovado</p>
+                            <div class="motivo-observacao">
+                                <p class="motivo-reembolso-historico"><b>Motivo:</b> Emergência de trabalho</p>
+                                <p class="observacao"><b>Observação:</b> Nenhuma observação</p>
+                            </div>
+                        </div><!--reembolso-status-->
+
+                        <div class="reembolso-status">
+                            <h3 class="titulo-evento">Noite de Jazz</h3>
+                            <p class="preco-reembolso">R$ 55</p>
+                            <p class="Reprovado">Reprovado</p>
+                            <div class="motivo-observacao">
+                                <p class="motivo-reembolso-historico"><b>Motivo:</b> Horario do evento mudou</p>
+                                <p class="observacao"><b>Observação:</b> Nenhuma observação</p>
+                            </div>
+                        </div><!--reembolso-status-->
+
+                    </div><!--conteudo-historico-reembolsos-->
+                </div><!--historico-reembolsos-->
+            </div><!--lado-direito-->
+        </div><!--lados-->
+    </main>
+
+    <!---------------------FOOTER--------------------------------->
+
+    <footer>
+        <div class="flex-footer">
+            <div class="logo-descricao-social">
+                <div class="logo">
+                    <i class="fa fa-ticket icon-logo-footer"></i>
+                    <h4 class="titulo-footer">Ingressou</h4>
+                </div>
+
+                <div class="descricao">
+                    <p class="descricao-texto">
+                        Seu ingresso para experiências incríveis. Encontre e reserve ingressos para shows, esportes,
+                        teatro e mais eventos ao redor do mundo.
+                    </p>
+                </div>
+
+                <div class="social">
+                    <i class="fa fa-facebook social-icon"></i>
+                    <i class="fa fa-twitter social-icon"></i>
+                    <i class="fa fa-instagram social-icon"></i>
+                </div>
+            </div>
+
+            <div class="categorias-footer">
+                <h3 class="titulo-categorias-footer">Categorias</h3>
+                <ul class="lista-categorias">
+                    <a href="#">
+                        <li>Musica</li>
+                    </a>
+                    <a href="#">
+                        <li>Esportes</li>
+                    </a>
+                    <a href="#">
+                        <li>Teatro</li>
+                    </a>
+                    <a href="#">
+                        <li>Comedia</li>
+                    </a>
+                    <a href="#">
+                        <li>Festivais</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-conta">
+                <h3 class="titulo-conta-footer">Conta</h3>
+                <ul class="lista-conta-footer">
+                    <a href="#">
+                        <li>Perfil</li>
+                    </a>
+                    <a href="#">
+                        <li>Tickets</li>
+                    </a>
+                    <a href="#">
+                        <li>Reembolso</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="newsletter-footer">
+                <h3 class="titulo-newsletter-footer">Newsletter</h3>
+                <p class="desccricao-newsletter-footer">Se inscreva para receber email sobre eventos, ofertas e mais.
+                </p>
+
+                <input type="text" id="input-newsletter-footer" placeholder="Seu email">
+                <button class="inscreva-se-footer">Inscreva-se</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>

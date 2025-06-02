@@ -1,0 +1,26 @@
+{
+    "eventos": [
+    {
+        "nome": "Festival de Verão",
+        "categoria": "Musica",
+        "data": "12-12-2025",
+        "preco": 89.99,
+        "pedido": "#834951"
+    },
+
+    {
+        "nome": "Final do Brasileirão",
+        "categoria": "Esportes",
+        "data": "12-12-2025",
+        "preco": 89.99,
+        "pedido": "#935373"
+    },
+
+    {
+        "nome": "A Bela e a Fera: O Musical",
+        "categoria": "Teatro",
+        "data": "12-12-2025",
+        "preco": 89.99,
+        "pedido": "#973857"
+    }
+]}

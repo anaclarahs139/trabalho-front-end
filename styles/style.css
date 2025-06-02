@@ -1,0 +1,664 @@
+/*********************** ESTILO GERAL*******************/
+
+body {
+    margin: 0px;
+    color: #212529;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(245, 244, 244);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.titulo-seccao {
+    text-align: center;
+    margin: 3rem 0rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.titulo-seccao-2 {
+    margin: 2rem 0rem 0rem 3.8rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.evento-categoria {
+    font-size: 12px;
+    padding: 3px 7.8px;
+    border-radius: 10%;
+    color: white;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.evento-categoria-2 {
+    margin: 0px 3rem 0rem 0rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.evento-categoria-musica {
+    background-color: blue;
+    width: 38px;
+}
+
+.evento-categoria-esporte {
+    background-color: green;
+    width: 45px;
+}
+
+.evento-categoria-teatro {
+    background-color: rgb(182, 34, 34);
+    width: 2rem;
+}
+
+.evento-categoria-comedia {
+    background-color: yellow;
+    width: 3rem;
+}
+
+/**************HEADER****************/
+
+/*************TITULO E MENU******************/
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    position: sticky;
+    z-index: 5;
+    top: 0;
+}
+
+.flex-header {
+    width: 95%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo-menu {
+    display: flex;
+    align-items: center;
+}
+
+/*Icon ingresso*/
+.fa-ticket {
+    margin-right: 0.5rem;
+    font-size: 18px;
+    writing-mode: vertical-rl;
+    transform: rotate(40deg);
+}
+
+.titulo-header {
+    font-size: 1.25rem;
+}
+
+.menu-header {
+    padding: 1rem;
+}
+
+.menu-header li {
+    display: inline;
+}
+
+.menu-header a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+}
+
+/**********************PESQUISA E PROFILE*****************/
+
+.barra-pesquisa {
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    border-right: none;
+    width: 207px;
+    height: 37px;
+    padding: 1px 20px 0px 5px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.lupa {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.pesquisar {
+    padding: 0px;
+    width: 42px;
+    height: 40px;
+    background-color: white;
+    color: rgb(24, 93, 196);
+    border: 1px solid rgb(24, 93, 196);
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -10px;
+}
+
+.profile {
+    border: 1px solid rgb(24, 93, 196);
+    margin: 10px;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+/*icon user*/
+.fa-user {
+    color: rgb(24, 93, 196);
+
+}
+
+/*******************CATEGORIAS**********************/
+
+.flex-categorias {
+    display: flex;
+    justify-content: center;
+}
+
+/*.categoria {
+    border: 1px solid gray;
+    padding: 2rem 2rem 1rem 2rem;
+    margin: 2rem;
+    width: 6rem;
+    border-radius: 5%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 16px -2px rgba(197, 192, 192, 0.75);
+}*/
+
+.categoria {
+    border: 1px solid rgb(218, 212, 212);
+    padding: 1rem 2rem 0.5rem 2rem;
+    margin: 1rem;
+    width: 8rem;
+    height: 5rem;
+    border-radius: 5%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 16px -2px rgba(218, 216, 216, 0.75);
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.categoria:hover {
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    border: 1px solid rgb(24, 93, 196);
+    cursor: pointer;
+    top: -10px;
+}
+
+/********** ESTILOS DOS ICONS DAS CATEGORIAS **********/
+
+.categoria-icon {
+    font-size: 32px;
+}
+
+.musica-icon {
+    color: rgb(20, 94, 190);
+}
+
+.basket-icon {
+    color: green;
+}
+
+.fa-masks-theater {
+    color: rgb(182, 34, 34);
+}
+
+.fa-face-laugh-beam {
+    color: yellow;
+}
+
+.fa-umbrella-beach {
+    color: aqua;
+}
+
+/********FINAL ESTILO ICONS CATEGORIAS*********/
+
+.titulo-categoria {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/************** EVENTOS PRINCIPAIS *****************/
+
+.flex-eventos-principais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.evento {
+    width: 330px;
+    padding: 12px;
+    border: 1px solid lightgray;
+    margin: 12px;
+    background-color: white;
+    border-radius: 0.375rem;
+    box-shadow: 10px 10px 16px -3px rgba(222, 217, 217, 0.75);
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.evento:hover {
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    top: -10px;
+    border: 1px solid rgb(24, 93, 196);
+}
+
+.img-evento {
+    height: 200px;
+}
+
+.categoria-data-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 21px;
+    margin: 0px 0px 8px;
+}
+
+.data {
+    font-weight: 100;
+    text-align: center;
+    color: #212529BF;
+}
+
+.titulo-evento {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+
+.preco {
+    font-size: 20px;
+}
+
+.ver-mais {
+    margin-left: 1rem;
+    background-color: white;
+    color: rgb(24, 93, 196);
+    border: 1px solid rgb(24, 93, 196);
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+}
+
+.ver-mais:hover {
+    background-color: rgb(24, 93, 196);
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/**********************FAMOSOS ESSA SEMANA*******************************/
+
+.flex-destaques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destaque {
+    width: 300px;
+    height: 390px;
+    margin: 1rem 0.5rem ;
+    text-wrap: wrap;
+    border-radius: 0.375rem;
+    background: white;
+    border: 1px solid lightgray;
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.destaque:hover {
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    top: -10px;
+    border: 1px solid rgb(24, 93, 196);
+}
+
+.img-evento-destaque {
+    width: 259px;
+    height: 180px;
+}
+
+.informacoes-destaque {
+    padding: 1rem;
+}
+
+.titulo-evento-destaque{
+    margin: 0px 0px 8px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.preco-detalhes-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*************************EVENTOS PROXIMOS DE VOCÊ****************************/
+
+.flex-eventos-proximos{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-location-dot {
+    background-color: rgb(216, 213, 213);
+    padding: 8px 10px 10px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 40px 0px 0px 60px;
+}
+
+.locais {
+    width: 60rem;
+    height: 37px;
+    border-radius: 5px;
+}
+
+/***********EVENTOS-LOCAL*************/
+.flex-evento-local {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.evento-local {
+    display: flex;
+    width: 546px;
+    height: 180px;
+    margin: 12px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 16px -3px rgba(189, 186, 186, 0.75);
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.evento-local:hover {
+    top: -10px;
+    border: 1px solid rgb(24, 93, 196);
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.img-evento-local {
+    width: 181.33px;
+}
+
+.detalhes-evento-local{
+    padding: 16px;
+    width: 100%;
+}
+
+.evento-categoria-local {
+    margin: 0px 3rem 0rem 0rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.evento-categoria-comedia {
+    background-color: yellow;
+    width: 3rem;
+}
+
+.titulo-evento-local {
+    padding: 0px;
+    margin: 0px 0px 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.local {
+    margin: 0px 0px 1rem;
+    margin: 0px;
+}
+
+.flex-preco-detalhes-local{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ver-mais-evento-local {
+    background-color: white;
+    color: rgb(24, 93, 196);
+    border: 1px solid rgb(24, 93, 196);
+    font-size: 15px;
+    padding: 4px 8px;
+}
+
+.ver-mais-evento-local:hover {
+    background-color: rgb(24, 93, 196);
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.flex-ver-todos-local{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-ver-todos-local {
+    background-color: white;
+    color: rgb(24, 93, 196);
+    border: 1px solid rgb(24, 93, 196);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 30px 0px;
+}
+
+.botao-ver-todos-local:hover {
+    background-color: rgb(24, 93, 196);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease
+}
+
+/**************FOOTER*******************************/
+
+.flex-footer{
+    display: flex;
+    justify-content: center;
+    margin: 96px 0px 20px 0px;
+}
+
+.logo-descricao-social{
+    width: 420px;
+    padding: 0px 12px;
+}
+
+.logo{
+    display: flex;
+    
+}
+
+.icon-logo-footer{
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.titulo-footer{
+    margin: 5px;
+    font-size: 24px;
+}
+
+.social-icon{
+    background-color: #21252925;
+    padding: 18px;
+    border-radius: 100%;
+    font-size: 18px;
+}
+
+.categorias-footer{
+    width: 220px;
+    padding: 0px 12px;
+}
+
+.titulo-categorias-footer{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.lista-categorias{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.5;
+}
+
+.footer-conta{
+    width: 200px;
+    padding: 0px 12px;
+}
+
+.titulo-conta-footer{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.lista-conta-footer{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+}
+
+.newsletter-footer{
+    width: 450px;
+    padding: 0px 12px;
+}
+
+#input-newsletter-footer{
+    width: 300px;
+    padding: 12px 10px;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem ;
+}
+
+.inscreva-se-footer{
+    width: 106px;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgb(24, 93, 196);
+    color: white;
+    font-size: 0.8rem;
+    margin-left: -10px;
+}
+
+hr{
+    width: 1300px;
+    border: 1px solid lightgray;
+    margin: 0 auto;
+}
+/***************SLIDE********************/
+
+.my-slider {
+    width: 100%;
+    height: 450px;
+    background-color: red;
+}
+
+.slide {
+    font-size: 90px;
+    color: white;
+    text-align: center;
+}
+
+.s1 {
+    background-color: blue;
+}
+
+.s2 {
+    background-color: darkred;
+}
+
+.s3 {
+    background-color: green;
+}
+
+.tns-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Estilo visual dos botões */
+.tns-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+    border-radius: 50%;
+    font-size: 0;
+    /* esconde o texto */
+    cursor: pointer;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Remove qualquer texto que venha por padrão */
+.tns-controls button::before {
+    content: "";
+}
+
+/* Adiciona os ícones usando Font Awesome */
+.tns-controls [data-controls="prev"]::after {
+    content: "\f104";
+    /* ícone seta esquerda */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.tns-controls [data-controls="next"]::after {
+    content: "\f105";
+    /* ícone seta direita */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.tns-controls [data-controls="next"] {
+    right: 100px;
+}

@@ -1,0 +1,544 @@
+body {
+    margin: 0px;
+    color: #212529;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F8F9FA;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.titulo-seccao {
+    text-align: center;
+    margin: 3rem 0rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.titulo-seccao-2 {
+    margin: 2rem 0rem 0rem 3.8rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.evento-categoria {
+    font-size: 12px;
+    padding: 3px 7.8px;
+    border-radius: 10%;
+    color: white;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.evento-categoria-2 {
+    margin: 0px 3rem 0rem 0rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.evento-categoria-musica {
+    background-color: blue;
+    width: 45px;
+}
+
+.evento-categoria-esporte {
+    background-color: green;
+    width: 45px;
+}
+
+.evento-categoria-teatro {
+    background-color: rgb(182, 34, 34);
+    width: 2rem;
+}
+
+.evento-categoria-comedia {
+    background-color: yellow;
+    width: 3rem;
+}
+
+.lados{
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
+    margin: auto;
+}
+
+.lado-esquerdo{
+    width: 266px;
+}
+
+.lado-direito{
+    width: 890px;
+    margin: 3rem 6rem 0rem 0rem;
+}
+
+/**************HEADER****************/
+
+/*************TITULO E MENU******************/
+header {
+    width: 100%;
+    /*height: 180px;*/
+    background-color: #1C2333;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    position: sticky;
+    z-index: 5;
+    top: 0;
+}
+
+.flex-header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.div-titulo-header {
+    display: flex;
+    align-items: center;
+}
+
+/*Icon ingresso*/
+.fa-ticket {
+    margin: 0.5rem 0.5rem 0rem 0rem;
+    font-size: 18px;
+    writing-mode: vertical-rl;
+    transform: rotate(40deg);
+    color: white;
+}
+
+.titulo-header a{
+    font-size: 1.25rem;
+    color: white;
+}
+
+/********************BUSCA-PERFIL********************/
+
+.div-nav-perfil{
+    padding: 2.5rem 0rem 0.3rem 5rem;
+    background-color: #1C2333;
+}
+
+.navegacao-perfil{
+    color: #FCF9FCBF;
+    font-size: 1.2rem;
+
+}
+
+/*****************************BUSCA**********************/
+
+.img-perfil-nav{
+    width: 304px;
+    height: 500px;
+    border: 1px solid lightgray;
+    margin: 3rem 2rem 0rem 0rem;
+    border-radius: 0.375rem;
+}
+
+.icon-usuario{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-foto-perfil{
+    margin: 3rem 0rem;
+}
+
+.nome-usuario, .email-usuario{
+    text-align: center;
+}
+
+.editar-perfil{
+    margin: 0rem 6rem;
+    background-color: aliceblue;
+    padding: 7px 10px;
+    border: 1px solid lightgray;
+}
+
+.editar-perfil:hover{
+    background-color: rgb(177, 173, 173);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.sair{
+    padding: 5px;
+    background-color: rgb(236, 96, 96);
+    border-radius: 2px;
+    border: 1px solid rgb(190, 53, 53);
+    margin: 5rem 5.6rem;
+}
+
+.sair:hover{
+    background-color: rgb(211, 55, 55);
+    transition: 0.5s ease;
+}
+
+.sair a{
+    color: white;
+    font-size: 1rem;
+}
+
+/*************************NAV PERFIL*********************/
+
+.nav-perfil{
+    margin: 0px;
+    width: 266px;
+    padding: 0px;
+}
+
+.lista-nav-perfil{
+    padding: 0px;
+    list-style: none;
+    border-radius: 0.375rem;
+    border: 1px solid lightgray;
+    width: 308px;
+}
+
+.atual{
+    background-color: #795eff;
+    color: white;
+}
+
+.lista-nav-perfil .link-nav-perfil{
+    padding: 10px 20px;
+    font-weight: 600;
+    border: 1px solid lightgray;
+    width: 266px;
+}
+
+.link-nav-perfil:hover{
+    background-color: #795eff;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/*******************EVENTOS VINDO****************/
+
+.header-eventos-vindo{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    align-items: center;
+}
+
+.titulo-eventos-vindo{
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.quantidade-eventos-vindo{
+    background-color: #27B9D6;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 0.375rem;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px ;
+}
+
+.eventos-vindo-conteudo{
+    border: 1px solid lightgray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 0.375rem;
+    margin-bottom: 20px;
+}
+
+.eventos-vindo-evento{
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+}
+
+.evento-vindo-header{
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border-radius: 0.375rem;
+}
+
+.evento-vindo-titulo{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.evento-vindo-conteudo{
+    padding: 10px;
+}
+
+.evento-vindo-download-detalhes{
+    display: flex;
+    margin: 10px;
+}
+
+.download{
+    padding: 5px 10px;
+    background-color: rgb(235, 237, 240);
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    margin-right: 5px;
+}
+
+.detalhes{
+    padding: 5px 10px;
+    color: #27b9d6;
+    background-color: white;
+    border: 1px solid #27b9d6;
+    border-radius: 0.375rem;
+}
+
+.download:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.detalhes:hover{
+    background-color: #27b9d6;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.evento-vindo-codigo-reembolso{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 0.375rem;
+}
+
+.pedir-reembolso{
+    color: lightcoral;
+}
+
+.margin{
+    margin: 10px;
+}
+
+
+
+/*******************EVENTOS-QUE-PASSARM**************/
+
+.header-eventos-passaram{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    align-items: center;
+}
+
+.titulo-eventos-passaram{
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.quantidade-eventos-passaram{
+    background-color: #27B9D6;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 0.375rem;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px ;
+}
+
+.eventos-passaram-conteudo{
+    border: 1px solid lightgray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 0.375rem;
+    margin-bottom: 20px;
+}
+
+.eventos-passaram-evento{
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+}
+
+.evento-passaram-header{
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border-radius: 0.375rem;
+}
+
+.evento-passaram-titulo{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.evento-passaram-conteudo{
+    padding: 10px;
+}
+
+.evento-passaram-download-detalhes{
+    display: flex;
+    margin: 10px;
+}
+
+.recibo{
+    padding: 5px 10px;
+    background-color: rgb(235, 237, 240);
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    margin-right: 5px;
+}
+
+.avalie{
+    padding: 5px 10px;
+    color: #27b9d6;
+    background-color: white;
+    border: 1px solid #27b9d6;
+    border-radius: 0.375rem;
+}
+
+.recibo:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.avalie:hover{
+    background-color: #27b9d6;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.evento-vindo-codigo-reembolso{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 0.375rem;
+}
+
+.pedir-reembolso{
+    color: lightcoral;
+}
+
+.margin{
+    margin: 10px;
+}
+
+.passaram{
+    opacity: 60%;
+}
+
+/*****************FOOTER********************/
+
+.flex-footer{
+    display: flex;
+    justify-content: center;
+    margin: 96px 0px 20px 0px;
+}
+
+.logo-descricao-social{
+    width: 420px;
+    padding: 0px 12px;
+}
+
+.logo{
+    display: flex;
+    
+}
+
+.icon-logo-footer{
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.titulo-footer{
+    margin: 5px;
+    font-size: 24px;
+}
+
+.social-icon{
+    background-color: #21252925;
+    padding: 18px;
+    border-radius: 100%;
+    font-size: 18px;
+}
+
+.categorias-footer{
+    width: 220px;
+    padding: 0px 12px;
+}
+
+.titulo-categorias-footer{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.lista-categorias{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.5;
+}
+
+.footer-conta{
+    width: 200px;
+    padding: 0px 12px;
+}
+
+.titulo-conta-footer{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.lista-conta-footer{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+}
+
+.newsletter-footer{
+    width: 450px;
+    padding: 0px 12px;
+}
+
+#input-newsletter-footer{
+    width: 300px;
+    padding: 12px 10px;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem ;
+}
+
+.inscreva-se-footer{
+    width: 106px;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgb(24, 93, 196);
+    color: white;
+    font-size: 0.8rem;
+    margin-left: -10px;
+}
