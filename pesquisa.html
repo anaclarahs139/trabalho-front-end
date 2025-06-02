@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/503054cb29.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="styles/pesquisa.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
@@ -49,147 +51,182 @@
                 <a href="./organizadores.html"><button class="nav-btn-style">Organizadores</button></a>
             </section>
 
-            <section class="filters">
-                <p>Filtrar por</p>
-                <div>
-                    <button class="nav-btn-style">Categoria</button>
-                    <button class="nav-btn-style">Data</button>
-                    <button class="nav-btn-style">Preço</button>
-                    <button class="nav-btn-style">Local</button>
-                </div>
 
-            </section>
+            <button class="filtrar" onclick="abrirFiltro(); preco()"><i class="fa-solid fa-filter"></i> Filtrar</button>
         </section>
+
+        <div class="overlay"></div>
+        <div class="div-filtro">
+            <div class="filtros">
+                <label for="categoria">Categoria</label>
+                <select name="categoria" id="filtro-categoria">
+                    <option value="categoria" disabled>Escolha a Categoria</option>
+                    <option value="categoria">Musica</option>
+                    <option value="categoria">Esportes</option>
+                    <option value="categoria">Festivais</option>
+                    <option value="categoria">Teatro</option>
+                    <option value="categoria">Festivais</option>
+                </select>
+
+                <label for="data">Data</label>
+                <select name="data" id="filtro-data">
+                    <option value="data" disabled>Escolha a Data</option>
+                    <option value="data">Hoje</option>
+                    <option value="data">Amanhã</option>
+                    <option value="data">Essa semana</option>
+                    <option value="data">Esse mês</option>
+                </select>
+
+                <label for="local">Local</label>
+                <select name="local" id="filtro-local">
+                    <option value="local" disabled>Escolha o Local</option>
+                    <option value="local">Rio de Janeiro</option>
+                    <option value="local">São Paulo</option>
+                    <option value="local">Minas Gerais</option>
+                    <option value="local">Espirito Santo</option>
+                </select>
+
+                <label for="preco">Preço</label>
+                <input type="range" id="filtro-preco" name="preco" min="20" max="500" onchange="preco()">
+                <small class="valor"></small>
+
+                <div class="botoes">
+                    <button class="resetar-filtro">Resetar Filtros</button>
+                    <button class="aplicar-filtro" onclick="aplicarFiltro()">Aplicar</button>
+                </div>
+            </div>
+        </div>
+
         <p>Página X de Y</p>
         <section class="flex-eventos-principais">
-             <a href="#">
-                    <div class="evento">
-                        <div class="img-evento"></div>
-                        <div class="categoria-data-flex">
-                            <p class="evento-categoria evento-categoria-musica">Musica</p>
-                            <p class="data">12/12/2025</p>
-                        </div>
-                        <h3 class="titulo-evento">Festival de Musica</h3>
-                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
-                        </p>
-                        <div class="preco-detalhes-flex">
-                            <span class="preco">R$ 89.99</span>
-                            <button class="ver-mais">Ver Mais</button>
-                        </div>
+            <a href="#">
+                <div class="evento">
+                    <div class="img-evento"></div>
+                    <div class="categoria-data-flex">
+                        <p class="evento-categoria evento-categoria-musica">Musica</p>
+                        <p class="data">12/12/2025</p>
                     </div>
-                </a>
-                 <a href="#">
-                    <div class="evento">
-                        <div class="img-evento"></div>
-                        <div class="categoria-data-flex">
-                            <p class="evento-categoria evento-categoria-musica">Musica</p>
-                            <p class="data">12/12/2025</p>
-                        </div>
-                        <h3 class="titulo-evento">Festival de Musica</h3>
-                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
-                        </p>
-                        <div class="preco-detalhes-flex">
-                            <span class="preco">R$ 89.99</span>
-                            <button class="ver-mais">Ver Mais</button>
-                        </div>
+                    <h3 class="titulo-evento">Festival de Musica</h3>
+                    <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                    </p>
+                    <div class="preco-detalhes-flex">
+                        <span class="preco">R$ 89.99</span>
+                        <button class="ver-mais">Ver Mais</button>
                     </div>
-                </a>
-                 <a href="#">
-                    <div class="evento">
-                        <div class="img-evento"></div>
-                        <div class="categoria-data-flex">
-                            <p class="evento-categoria evento-categoria-musica">Musica</p>
-                            <p class="data">12/12/2025</p>
-                        </div>
-                        <h3 class="titulo-evento">Festival de Musica</h3>
-                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
-                        </p>
-                        <div class="preco-detalhes-flex">
-                            <span class="preco">R$ 89.99</span>
-                            <button class="ver-mais">Ver Mais</button>
-                        </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="evento">
+                    <div class="img-evento"></div>
+                    <div class="categoria-data-flex">
+                        <p class="evento-categoria evento-categoria-musica">Musica</p>
+                        <p class="data">12/12/2025</p>
                     </div>
-                </a>
-                 <a href="#">
-                    <div class="evento">
-                        <div class="img-evento"></div>
-                        <div class="categoria-data-flex">
-                            <p class="evento-categoria evento-categoria-musica">Musica</p>
-                            <p class="data">12/12/2025</p>
-                        </div>
-                        <h3 class="titulo-evento">Festival de Musica</h3>
-                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
-                        </p>
-                        <div class="preco-detalhes-flex">
-                            <span class="preco">R$ 89.99</span>
-                            <button class="ver-mais">Ver Mais</button>
-                        </div>
+                    <h3 class="titulo-evento">Festival de Musica</h3>
+                    <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                    </p>
+                    <div class="preco-detalhes-flex">
+                        <span class="preco">R$ 89.99</span>
+                        <button class="ver-mais">Ver Mais</button>
                     </div>
-                </a>
-                 <a href="#">
-                    <div class="evento">
-                        <div class="img-evento"></div>
-                        <div class="categoria-data-flex">
-                            <p class="evento-categoria evento-categoria-musica">Musica</p>
-                            <p class="data">12/12/2025</p>
-                        </div>
-                        <h3 class="titulo-evento">Festival de Musica</h3>
-                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
-                        </p>
-                        <div class="preco-detalhes-flex">
-                            <span class="preco">R$ 89.99</span>
-                            <button class="ver-mais">Ver Mais</button>
-                        </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="evento">
+                    <div class="img-evento"></div>
+                    <div class="categoria-data-flex">
+                        <p class="evento-categoria evento-categoria-musica">Musica</p>
+                        <p class="data">12/12/2025</p>
                     </div>
-                </a>
-                 <a href="#">
-                    <div class="evento">
-                        <div class="img-evento"></div>
-                        <div class="categoria-data-flex">
-                            <p class="evento-categoria evento-categoria-musica">Musica</p>
-                            <p class="data">12/12/2025</p>
-                        </div>
-                        <h3 class="titulo-evento">Festival de Musica</h3>
-                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
-                        </p>
-                        <div class="preco-detalhes-flex">
-                            <span class="preco">R$ 89.99</span>
-                            <button class="ver-mais">Ver Mais</button>
-                        </div>
+                    <h3 class="titulo-evento">Festival de Musica</h3>
+                    <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                    </p>
+                    <div class="preco-detalhes-flex">
+                        <span class="preco">R$ 89.99</span>
+                        <button class="ver-mais">Ver Mais</button>
                     </div>
-                </a>
-                 <a href="#">
-                    <div class="evento">
-                        <div class="img-evento"></div>
-                        <div class="categoria-data-flex">
-                            <p class="evento-categoria evento-categoria-musica">Musica</p>
-                            <p class="data">12/12/2025</p>
-                        </div>
-                        <h3 class="titulo-evento">Festival de Musica</h3>
-                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
-                        </p>
-                        <div class="preco-detalhes-flex">
-                            <span class="preco">R$ 89.99</span>
-                            <button class="ver-mais">Ver Mais</button>
-                        </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="evento">
+                    <div class="img-evento"></div>
+                    <div class="categoria-data-flex">
+                        <p class="evento-categoria evento-categoria-musica">Musica</p>
+                        <p class="data">12/12/2025</p>
                     </div>
-                </a>
-                 <a href="#">
-                    <div class="evento">
-                        <div class="img-evento"></div>
-                        <div class="categoria-data-flex">
-                            <p class="evento-categoria evento-categoria-musica">Musica</p>
-                            <p class="data">12/12/2025</p>
-                        </div>
-                        <h3 class="titulo-evento">Festival de Musica</h3>
-                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
-                        </p>
-                        <div class="preco-detalhes-flex">
-                            <span class="preco">R$ 89.99</span>
-                            <button class="ver-mais">Ver Mais</button>
-                        </div>
+                    <h3 class="titulo-evento">Festival de Musica</h3>
+                    <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                    </p>
+                    <div class="preco-detalhes-flex">
+                        <span class="preco">R$ 89.99</span>
+                        <button class="ver-mais">Ver Mais</button>
                     </div>
-                </a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="evento">
+                    <div class="img-evento"></div>
+                    <div class="categoria-data-flex">
+                        <p class="evento-categoria evento-categoria-musica">Musica</p>
+                        <p class="data">12/12/2025</p>
+                    </div>
+                    <h3 class="titulo-evento">Festival de Musica</h3>
+                    <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                    </p>
+                    <div class="preco-detalhes-flex">
+                        <span class="preco">R$ 89.99</span>
+                        <button class="ver-mais">Ver Mais</button>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="evento">
+                    <div class="img-evento"></div>
+                    <div class="categoria-data-flex">
+                        <p class="evento-categoria evento-categoria-musica">Musica</p>
+                        <p class="data">12/12/2025</p>
+                    </div>
+                    <h3 class="titulo-evento">Festival de Musica</h3>
+                    <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                    </p>
+                    <div class="preco-detalhes-flex">
+                        <span class="preco">R$ 89.99</span>
+                        <button class="ver-mais">Ver Mais</button>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="evento">
+                    <div class="img-evento"></div>
+                    <div class="categoria-data-flex">
+                        <p class="evento-categoria evento-categoria-musica">Musica</p>
+                        <p class="data">12/12/2025</p>
+                    </div>
+                    <h3 class="titulo-evento">Festival de Musica</h3>
+                    <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                    </p>
+                    <div class="preco-detalhes-flex">
+                        <span class="preco">R$ 89.99</span>
+                        <button class="ver-mais">Ver Mais</button>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="evento">
+                    <div class="img-evento"></div>
+                    <div class="categoria-data-flex">
+                        <p class="evento-categoria evento-categoria-musica">Musica</p>
+                        <p class="data">12/12/2025</p>
+                    </div>
+                    <h3 class="titulo-evento">Festival de Musica</h3>
+                    <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
+                    </p>
+                    <div class="preco-detalhes-flex">
+                        <span class="preco">R$ 89.99</span>
+                        <button class="ver-mais">Ver Mais</button>
+                    </div>
+                </div>
+            </a>
         </section>
         <section class="page-num">
             <div class="circle">
@@ -270,6 +307,8 @@
 
         <hr>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

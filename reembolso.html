@@ -35,6 +35,7 @@
                     <p class="nome-usuario">NOME</p>
                     <p class="email-usuario">Email@exemplo.com</p>
                     <button class="editar-perfil">Editar Perfil</button>
+                    <button class="sair"><a href="login.html">Sair da Conta</a></button>
                 </div><!--img-perfil-nav-->
 
                 <div class="nav-perfil">
@@ -81,20 +82,20 @@
 
                         <label for="qual-ticket">Escolhe o Ticket que desejar pedir reembolso</label><br>
                         <select name="ingressos" id="ingressos" required>
-                            <option value="ingressos">Escolha o evento</option>
+                            <option value="ingressos" disabled>Escolha o evento</option>
                         </select><br><br>
 
                         <label for="porque">Por que deseja pedir reembolso</label><br>
                         <select name="porque" id="porque-reembolso" required>
-                            <option value="porque">Escolha um motivo</option>
+                            <option disabled>Escolha um motivo</option>
 
-                            <option value="porque" name="nao-posso-ir">Não posso ir ao evento</option>
+                            <option value="porque">Não posso ir ao evento</option>
 
-                            <option value="porque" name="detalhes-mudaram">Detalhes do evento mudaram</option>
+                            <option value="porque">Detalhes do evento mudaram</option>
 
-                            <option value="porque" name="emergencia-trabalho">Emergência de trabalho</option>
+                            <option value="porque">Emergência de trabalho</option>
 
-                            <option value="porque" name="horario-mudou">Horario do evento mudou</option>
+                            <option value="porque">Horario do evento mudou</option>
 
                             <option value="porque">Outro</option>
 
@@ -122,7 +123,7 @@
                     </div><!--header-reembolsos-em-analise-->
 
                     <div class="conteudo-reembolsos-em-analise">
-                        <div class="conteudo-reembolso-em-analise">
+                        <div class="conteudo-reembolso-em-analise re1">
                             <div class="titulo-reembolso-pendente">
                                 <h3 class="nome-evento-do-reembolso">Festival da Musica</h3>
                                 <p class="reembolso-pendente">Em analise</p>
@@ -130,7 +131,7 @@
 
                             <div class="preco-botao-reembolso">
                                 <p class="preco-reembolso">R$ 120</p>
-                                <button class="cancelar-reembolso">cancelar Reembolso</button>
+                                <button class="cancelar-reembolso" onclick="cancelarReembolso()">cancelar Reembolso</button>
                             </div><!--preco-botao-reembolso-->
 
                             <div class="motivo-reembolso">
