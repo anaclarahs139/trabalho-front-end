@@ -13,33 +13,42 @@
 </head>
 
 <body>
+    <!--------------HEADER------------------>
     <header>
         <div class="flex-header">
             <div class="titulo-menu">
                 <i class="fa-solid fa-ticket"></i>
-                <h1 class="titulo-header">INGRESSOU</h1>
+                <a href="index.html">
+                    <h1 class="titulo-header">INGRESSOU</h1>
+                </a>
                 <ul class="menu-header">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Eventos</li></a>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Eventos</li>
+                    </a>
                 </ul>
-            </div><!--titulo-menu-->
-
+            </div>
             <div class="busca-profile">
                 <input type="text" class="barra-pesquisa" placeholder="Buscar eventos">
                 <button class="pesquisar"><i class="fa-solid fa-magnifying-glass lupa"></i></button>
-
-                <a href="perfil.html" class="profile"><i class="fa-solid fa-user"></i></a>
-            </div><!--busca-profile-->
-        </div><!--flex-header-->
+                <a href="login.html"><button class="btn-style">Login</button></a>
+                <a href="cadastro.html"><button class="reg-btn">Register</button></a>
+            </div>
+            <div class="profile-icon">
+                <a href="#" class="profile"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
     </header>
 
     <!--------------CARROSSEL------------------>
 
     <div class="my-slider">
-        <div class="slide s1">slide1</div>
-        <div class="slide s2">slide2</div>
-        <div class="slide s3">slide3</div>
-    </div><!--my-slider-->
+        <div class="slide s1"><img class="carousel-img-size" src="./assets/images/borderlands-4-red-3840x2160-22446.jpg"></div>
+        <div class="slide s2"><img class="carousel-img-size" src="./assets/images/doom-the-dark-ages-3840x2160-22467.jpg"></div>
+        <div class="slide s3"><img class="carousel-img-size" src="./assets/images/grand-theft-auto-vi-3840x2160-22311.jpg"></div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
@@ -67,87 +76,87 @@
                 <div class="categoria">
                     <i class="fa-solid fa-music categoria-icon musica-icon"></i>
                     <h3 class="titulo-categoria">Musica</h3>
-                </div><!--categoria-->
+                </div>
 
                 <div class="categoria">
                     <i class="fa-solid fa-basketball categoria-icon basket-icon"></i>
                     <h3 class="titulo-categoria">Esportes</h3>
-                </div><!--categoria-->
+                </div>
 
                 <div class="categoria">
                     <i class="fa-solid fa-masks-theater categoria-icon"></i>
                     <h3 class="titulo-categoria">Teatro</h3>
-                </div><!--categoria-->
+                </div>
 
                 <div class="categoria">
                     <i class="fa-solid fa-face-laugh-beam categoria-icon"></i>
                     <h3 class="titulo-categoria">Comedia</h3>
-                </div><!--categoria-->
+                </div>
 
                 <div class="categoria">
                     <i class="fa-solid fa-umbrella-beach categoria-icon"></i>
                     <h3 class="titulo-categoria">Festivais</h3>
-                </div><!--categoria-->
-            </div><!--flex-categorias-->
-        </Section><!--categorias-->
+                </div>
+            </div>
+        </Section>
 
         <!------------------EVENTOS PRINCIPAIS------------------------------>
 
         <section class="eventos-principais">
             <h2 class="titulo-seccao-2">Eventos Principais</h2>
             <div class="flex-eventos-principais">
-                <a href="pagina-evento.html">
+                <a href="#">
                     <div class="evento">
                         <div class="img-evento"></div>
                         <div class="categoria-data-flex">
                             <p class="evento-categoria evento-categoria-musica">Musica</p>
                             <p class="data">12/12/2025</p>
-                        </div><!--categoria-data-flex-->
+                        </div>
                         <h3 class="titulo-evento">Festival de Musica</h3>
                         <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
                         </p>
                         <div class="preco-detalhes-flex">
                             <span class="preco">R$ 89.99</span>
                             <button class="ver-mais">Ver Mais</button>
-                        </div><!--preco-detalhes-flex-->
-                    </div><!--evento-->
+                        </div>
+                    </div>
                 </a>
 
-                <a href="pagina-evento.html">
+                <a href="#">
                     <div class="evento">
                         <div class="img-evento"></div>
                         <div class="categoria-data-flex">
                             <p class="evento-categoria evento-categoria-esporte">Esportes</p>
                             <p class="data">12/12/2025</p>
-                        </div><!--categoria-data-flex-->
-                        <h3 class="titulo-evento">Final do Brasileirão</h3>
-                        <p class="evento-descricao">Venha se emocionar nessa incrival final do campeonato nacional.
+                        </div>
+                        <h3 class="titulo-evento">Festival de Musica</h3>
+                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
                         </p>
                         <div class="preco-detalhes-flex">
                             <span class="preco">R$ 89.99</span>
                             <button class="ver-mais">Ver Mais</button>
-                        </div><!--preco-detalhes-flex-->
-                    </div><!--evento-->
+                        </div>
+                    </div>
                 </a>
 
-                <a href="pagina-evento.html">
+                <a href="#">
                     <div class="evento">
                         <div class="img-evento"></div>
                         <div class="categoria-data-flex">
                             <p class="evento-categoria evento-categoria-teatro">Teatro</p>
                             <p class="data">12/12/2025</p>
-                        </div><!--categoria-data-flex-->
-                        <h3 class="titulo-evento">A Bela e a Fera: O Musical</h3>
-                        <p class="evento-descricao">Uma linda peça de teatro que vai te fazer chorar.
+                        </div>
+                        <h3 class="titulo-evento">Festival de Musica</h3>
+                        <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo todo.
                         </p>
                         <div class="preco-detalhes-flex">
                             <span class="preco">R$ 89.99</span>
                             <button class="ver-mais">Ver Mais</button>
-                        </div><!--preco-detalhes-flex-->
-                    </div><!--evento-->
+                        </div>
+                    </div>
                 </a>
-            </div><!--flex-eventos-principais-->
-        </section><!--eventos-principais-->
+            </div>
+        </section>
 
         <!--DESTAQUES-->
 
@@ -162,28 +171,6 @@
                             <div class="categoria-data-flex">
                                 <p class="evento-categoria evento-categoria-teatro">Teatro</p>
                                 <p class="data">12/12/2025</p>
-                            </div><!--categoria-data-flex-->
-                            <h3 class="titulo-evento-destaque">Festival de Musica</h3>
-                            <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo
-                                todo.
-                            </p>
-
-                            <div class="preco-detalhes-flex">
-                                <span class="preco">R$ 89.99</span>
-                                <button class="ver-mais">Ver Mais</button>
-                            </div><!--preco-detalhes-flex-->
-                        </div><!--informacoes-destaque-->
-                    </a>
-                </div><!--destaque-->
-
-                <div class="destaque">
-                    <a href="#">
-                        <div class="img-evento-destaque"></div>
-
-                        <div class="informacoes-destaque">
-                            <div class="categoria-data-flex">
-                                <p class="evento-categoria evento-categoria-teatro">Teatro</p>
-                                <p class="data">12/12/2025</p>
                             </div>
                             <h3 class="titulo-evento-destaque">Festival de Musica</h3>
                             <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo
@@ -242,8 +229,31 @@
                     </a>
                 </div>
 
-            </div><!--flex-destaques-->
-        </section><!--destaques-->
+                <div class="destaque">
+                    <a href="#">
+                        <div class="img-evento-destaque"></div>
+
+                        <div class="informacoes-destaque">
+                            <div class="categoria-data-flex">
+                                <p class="evento-categoria evento-categoria-teatro">Teatro</p>
+                                <p class="data">12/12/2025</p>
+                            </div>
+                            <h3 class="titulo-evento-destaque">Festival de Musica</h3>
+                            <p class="evento-descricao">Um festival de música de 3 dias com grandes artistas do mundo
+                                todo.
+                            </p>
+
+                            <div class="preco-detalhes-flex">
+                                <span class="preco">R$ 89.99</span>
+                                <button class="ver-mais">Ver Mais</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </section>
 
         <!--EVENTOS PROXIMOS DE VOCÊ-->
 
@@ -252,7 +262,7 @@
 
             <div class="flex-eventos-proximos">
                 <div class="escolher-local">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-location-dot localizacao"></i>
                     <label for="opcoes"></label>
                     <select id="opcoes" class="locais">
                         <option value="1" class="local">Rio de Janeiro</option>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/503054cb29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/pagina-evento.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex-header">
+            <div class="titulo-menu">
+                <i class="fa-solid fa-ticket"></i>
+                <h1 class="titulo-header">INGRESSOU</h1>
+                <ul class="menu-header">
+                    <a href="home.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="pesquisa.html">
+                        <li>Eventos</li>
+                    </a>
+                </ul>
+            </div><!--titulo-menu-->
+
+            <div class="busca-profile">
+                <input type="text" class="barra-pesquisa" placeholder="Buscar eventos">
+                <a href="pesquisa.html"><button class="pesquisar"><i
+                            class="fa-solid fa-magnifying-glass lupa"></i></a></button></a>
+
+                <a href="perfil.html" class="profile"><i class="fa-solid fa-user"></i></a>
+            </div><!--busca-profile-->
+        </div><!--flex-header-->
+    </header>
+
+    <main>
+        <section class="lados-evento">
+            <div class="lado-esquerdo">
+                <div class="img-evento"><img src="#" alt="#"></div>
+
+                <div class="informacoes-importantes">
+                    <div class="titulo">
+                        <h2 class="titulo-evento">Festival da Musica</h2>
+                    </div>
+                    <div class="local-data-horario">
+
+                        <p class="data-pagina-evento"><i class="fa-solid fa-calendar-days"></i> 12/12/2025</p>
+
+                        <p class="horario-pagina-evento">
+                            <i class="fa-solid fa-clock"></i> 12:00 pm
+                        </p>
+
+                        <p class="local-pagina-evento"><i class="fa-solid fa-location-dot"></i> Copacabana, RJ</p>
+
+                    </div>
+
+                </div><!--informacoes-importantes-->
+
+                <div class="tickets-restantes">
+                    <p class="restantes"><i class="fa-solid fa-circle-info"></i> 123 Tickets Restantes</p>
+                </div>
+
+                <div class="descricao-pagina-evento">
+                    <div class="header-descricao">
+                        <h3 class="titulo-descricao">Descrição do Evento</h3>
+                    </div>
+
+                    <div class="texto-descricao">
+                        <p>Junte-se a nós no festival de música mais aguardado do ano! O Festival da Musica reúne os
+                            melhores artistas do mundo durante três dias de apresentações inesquecíveis em cinco palcos.
+                            <br><br>
+
+                            A programação deste ano conta com atrações principais ganhadoras do Grammy, artistas
+                            revelação e favoritos dos fãs, abrangendo gêneros que vão do pop e rock ao hip-hop e música
+                            eletrônica. <br><br>
+
+                            <span class="titulo-lista">Destaques do Festival:</span> <br><br>
+                        </p>
+                        <ul>
+                            <li>5 palcos com mais de 40 apresentações</li>
+                            <li>Barracas de comida com culinária local e internacional</li>
+                            <li>Instalações de arte e experiências interativas</li>
+                            <li>Áreas VIP com comodidades exclusivas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--lado-esquerdo-->
+
+            <div class="lado-direito">
+
+                <div class="header-escolha-ticket">
+                    <h3 class="titulo-escolha">Tipos de Ticket</h3>
+                </div>
+
+                <div class="lado-direito-conteudo">
+                    <div class="escolha-ticket-conteudo">
+                        <form action="#">
+                            <div class="tipo-de-ticket">
+                                <label for="tipo-ticket">Escolha seu ticket</label><br>
+                                <select name="tipo-ticket" id="tickets">
+                                    <option value="tipo-ticket">Normal - R$ 120.00</option>
+                                    <option value="tipo-ticket">Vip - R$ 190.00</option>
+                                </select><br>
+                            </div>
+
+                            <div class="quantidade-de-tickets">
+                                <label for="quantidade-tickets">Quantidade de tickets</label><br>
+                                <small>Maximo de 5 Tickets</small><br>
+                                <select name="quantidade-tickets" id="tickets-qtd">
+                                    <option value="quantidade-tickets">1</option>
+                                    <option value="quantidade-tickets">2</option>
+                                    <option value="quantidade-tickets">3</option>
+                                    <option value="quantidade-tickets">4</option>
+                                    <option value="quantidade-tickets">5</option>
+                                </select>
+                            </div>
+
+                            <div class="detalhes-do-ticket">
+                                <h4 class="titulo-detalhes-tickets">Detalhes</h4>
+                                <div class="tipo">
+                                    <p class="ticket-escolhido">Normal</p>
+                                    <p class="preco-ticket">R$ 120.00</p>
+                                </div>
+
+                                <div class="quantidade-escolhido">
+                                    <p class="quantidade">Quantidade</p>
+                                    <p>1</p>
+                                </div>
+
+                                <div class="taxa">
+                                    <span class="taxa-servico">Taxa de Serviço</span>
+                                    <p>R$ 7.50</p>
+                                </div>
+
+                                <div class="taxa">
+                                    <p class="taxa-servico">Taxa de Processamento</p>
+                                    <p>R$ 3.50</p>
+                                </div>
+
+                                <div class="total-preco">
+                                    <p class="preco-total"><b>Total:</b></p>
+                                    <p><b>R$ 131.00</b></p>
+                                </div>
+                            </div>
+
+                            <button class="comprar"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex-footer">
+            <div class="logo-descricao-social">
+                <div class="logo">
+                    <i class="fa fa-ticket icon-logo-footer"></i>
+                    <h4 class="titulo-footer">Ingressou</h4>
+                </div>
+
+                <div class="descricao">
+                    <p class="descricao-texto">
+                        Seu ingresso para experiências incríveis. Encontre e reserve ingressos para shows, esportes,
+                        teatro e mais eventos ao redor do mundo.
+                    </p>
+                </div>
+
+                <div class="social">
+                    <i class="fa fa-facebook social-icon"></i>
+                    <i class="fa fa-twitter social-icon"></i>
+                    <i class="fa fa-instagram social-icon"></i>
+                </div>
+            </div>
+
+            <div class="categorias-footer">
+                <h3 class="titulo-categorias-footer">Categorias</h3>
+                <ul class="lista-categorias">
+                    <a href="#">
+                        <li>Musica</li>
+                    </a>
+                    <a href="#">
+                        <li>Esportes</li>
+                    </a>
+                    <a href="#">
+                        <li>Teatro</li>
+                    </a>
+                    <a href="#">
+                        <li>Comedia</li>
+                    </a>
+                    <a href="#">
+                        <li>Festivais</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-conta">
+                <h3 class="titulo-conta-footer">Conta</h3>
+                <ul class="lista-conta-footer">
+                    <a href="perfil.html">
+                        <li>Perfil</li>
+                    </a>
+                    <a href="perfil.html">
+                        <li>Tickets</li>
+                    </a>
+                    <a href="reembolso.html">
+                        <li>Reembolso</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="newsletter-footer">
+                <h3 class="titulo-newsletter-footer">Newsletter</h3>
+                <p class="desccricao-newsletter-footer">Se inscreva para receber email sobre eventos, ofertas e mais.
+                </p>
+
+                <input type="text" id="input-newsletter-footer" placeholder="Seu email">
+                <button class="inscreva-se-footer">Inscreva-se</button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
